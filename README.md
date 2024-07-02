@@ -1,6 +1,6 @@
 This Web Application is made for use by my dnd party.
 
-#How it Works
+# How it Works
 After opening the web page select your sourcebooks you wish to use.
 Changing your sourcebooks repopulates the table and will result in a loss of any previously selected data.
 
