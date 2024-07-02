@@ -1,0 +1,134 @@
+{
+    "spells": [
+        {
+            "name": "Borrowed Knowledge",
+            "level": 2,
+            "school": "Divination",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "Self",
+            "components": {
+              "verbal": true,
+              "somatic": true,
+              "material": "a book worth at least 25 gp",
+              "consumed": false
+            },
+            "duration": "1 hour",
+            "concentration": false,
+            "description": "<p>You draw on knowledge from spirits of the past. Choose one skill in which you lack proficiency. For the spell's duration, you have proficiency in the chosen skill. The spell ends early if you cast it again.</p>",
+            "higher_levels": null,
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": null,
+            "source": "Strixhaven: A Curriculum of Chaos",
+            "page_number": 37,
+            "spell_list": ["Bard", "Cleric", "Warlock", "Wizard"]
+          },
+          {
+            "name": "Kinectic Jaunt",
+            "level": 2,
+            "school": "Transmutation",
+            "casting_time": "1 bonus action",
+            "ritual": false,
+            "range": "Self",
+            "components": {
+              "verbal": false,
+              "somatic": true
+            },
+            "duration": "Concentration, up to 1 minute",
+            "concentration": true,
+            "description": "<p>You magically empower your movement with dance-like steps, giving yourself the following benefits for the duration.</p><ul><li>Your walking speed increases by 10 feet.</li><li>You don't provoke opportunity attacks.</li><li>You can move through the space of another creature, and it doesn't count as difficult terrain. If you end your turn in another creature's space, you are shunted to the last unoccupied space you occupied, and you take 1d8 force damage.</li></ul>",
+            "higher_levels": null,
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": null,
+            "source": "Strixhaven: A Curriculum of Chaos",
+            "page_number": 37,
+            "spell_list": ["Artificer", "Bard", "Sorcerer", "Wizard"]
+          },
+          {
+            "name": "Silvery Barbs",
+            "level": 1,
+            "school": "Enchantment",
+            "casting_time": "1 reaction, which you take when a creature you can see within 60 feet of yourself succeeds on an attack roll, an ability check, or a saving throw",
+            "ritual": false,
+            "range": "60 feet",
+            "components": {
+              "verbal": true,
+              "somatic": false
+            },
+            "duration": "Instantaneous",
+            "concentration": false,
+            "description": "<p>You magically distract the triggering creature and turn its momentary uncertainty into encouragement for another creature. The triggering creature must reroll the d20 and use the lower roll.</p><p>You can then choose a different creature you can see within range (you can choose yourself). The chosen creature has advantage on the next attack roll, ability check, or saving throw it makes within 1 minute. A creature can be empowered by only one use of this spell at a time.</p>",
+            "higher_levels": null,
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": null,
+            "source": "Strixhaven: A Curriculum of Chaos",
+            "page_number": 38,
+            "spell_list": ["Bard", "Sorcerer", "Wizard"]
+          },
+          {
+            "name": "Vortex Warp",
+            "level": 2,
+            "school": "Conjuration",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "90 feet",
+            "components": {
+              "verbal": true,
+              "somatic": true
+            },
+            "duration": "Instantaneous",
+            "concentration": false,
+            "description": "<p>You magically twist space around another creature you can see within range. The target must succeed on a Constitution saving throw (the target can choose to fail), or the target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze.</p>",
+            "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the range of the spell increases by 30 feet for each slot level above 2nd.",
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": {
+              "type": "Constitution",
+              "effect": "no effect"
+            },
+            "source": "Strixhaven: A Curriculum of Chaos",
+            "page_number": 38,
+            "spell_list": ["Artificer", "Sorcerer", "Wizard"]
+          },
+          {
+            "name": "Wither and Bloom",
+            "level": 2,
+            "school": "Necromancy",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "60 feet",
+            "components": {
+              "verbal": true,
+              "somatic": true,
+              "material": "a withered vine twisted into a loop",
+              "consumed": false
+            },
+            "duration": "Instantaneous",
+            "concentration": false,
+            "description": "<p>You invoke both death and life upon a 10-foot-radius sphere centered on a point within range. Each creature of your choice in that area must make a Constitution saving throw, taking 2d6 necrotic damage on a failed save, or half as much damage on a successful one. Nonmagical vegetation in that area withers.</p><p>In addition, one creature of your choice in that area can spend and roll one of its unspent Hit Dice and regain a number of hit points equal to the roll plus your spellcasting ability modifier.</p>",
+            "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot above the 2nd, and the number of Hit Dice that can be spent and added to the healing roll increases by one for each slot above 2nd.",
+            "damage": {
+              "type": "necrotic",
+              "amount": "2d6"
+            },
+            "saving_throw": {
+              "type": "Constitution",
+              "effect": "halves damage"
+            },
+            "source": "Strixhaven: A Curriculum of Chaos",
+            "page_number": 38,
+            "spell_list": ["Druid", "Sorcerer", "Wizard"]
+          }
+    ]
+}

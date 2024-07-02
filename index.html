@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D 5e Spells</title>
+    <link href="indexstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="sourceFilters">
+        <div class = "flex-parent">
+        <div class= "flex-child">Official Source Books:<br>
+            <label><input type="checkbox" value="spells/spells_phb.json" id="phbCheckbox" class = "json-checkbox" checked> Player's Handbook</label><br>
+            <label><input type ="checkbox" value="spells/spells_tce.json" id="tceCheckbox" class ="json-checkbox" checked>Tasha's Cauldron of Everything</label><br>
+            <label><input type ="checkbox" value="spells/spells_xge.json" id="xgeCheckbox" class ="json-checkbox" checked>Xanathar's Guide to Everything</label><br>
+            <label><input type ="checkbox" value="spells/spells_SatO.json" id="satoCheckbox" class ="json-checkbox" checked>Sigil and the Outlands</label><br>
+            <label><input type="checkbox" value="spells/spells_AI.json" id="aiCheckbox" class="json-checkbox" checked>Acquisitions Inc.</label><br>
+            <label><input type="checkbox" value="spells/spells_AAG.json" id="aagCheckbox" class="json-checkbox" checked>Astral Adventurer's Guide</label><br>
+            <label><input type="checkbox" value="spells/spells_FTD.json" id="ftdCheckbox" class="json-checkbox" checked>Fizban's Treasury of Dragons</label><br>
+            <label><input type="checkbox" value="spells/spells_GGR.json" id="ggrCheckbox" class="json-checkbox" checked>Guildmaster's Guide to Ravnica</label><br>
+            <label><input type="checkbox" value="spells/spells_IDRotF.json" id="idrotfCheckbox" class="json-checkbox" checked>Icewind Dale: Rime of the Frostmaiden</label><br>
+            <label><input type="checkbox" value="spells/spells_SCC.json" id="sccCheckbox" class="json-checkbox" checked>Strixhaven: A Curriculum of Chaos</label><br>
+            <label><input type="checkbox" value="spells/spells_BMT.json" id="bmtCheckbox" class="json-checkbox" checked>The Book of Many Things</label><br>
+            <label><input type="checkbox" value="spells/spells_EGW.json" id="egwCheckbox" class="json-checkbox" checked>Explorer's Guide to Wildemount</label><br>
+            <label><input type="checkbox" value="spells/spells_LLK.json" id="llkCheckbox" class="json-checkbox" checked>Lost Laboratory of Kwalish</label><br>
+        </div>
+        <div class="flex-child">3rd Party/Homebrew:<br>
+            <label><input type="checkbox" value="HBspells/HGtMH_spells.json" id="hgtmhCheckbox" class="json-checkbox" checked>Heliana's Guide to Monster Hunting</label>
+        </div>
+    </div>
+        <div class="warning"><p><strong>WARNING!</strong></p>
+        <p>Changing your selected Source Books will regenerate the table, and all selected spells will be lost!</p></div>
+        <div class = "flex-parent">
+        <div class="flex-child">Spell Level:<br>
+            <label><input type="checkbox" value="0" class="level-checkbox" onclick = 'filterTable()' checked> Cantrip</label><br>
+            <label><input type="checkbox" value="1" class="level-checkbox" onclick = 'filterTable()' checked> 1</label><br>
+            <label><input type="checkbox" value="2" class="level-checkbox" onclick = 'filterTable()' checked> 2</label><br>
+            <label><input type="checkbox" value="3" class="level-checkbox" onclick = 'filterTable()' checked> 3</label><br>
+            <label><input type="checkbox" value="4" class="level-checkbox" onclick = 'filterTable()' checked> 4</label><br>
+            <label><input type="checkbox" value="5" class="level-checkbox" onclick = 'filterTable()' checked> 5</label><br>
+            <label><input type="checkbox" value="6" class="level-checkbox" onclick = 'filterTable()' checked> 6</label><br>
+            <label><input type="checkbox" value="7" class="level-checkbox" onclick = 'filterTable()' checked> 7</label><br>
+            <label><input type="checkbox" value="8" class="level-checkbox" onclick = 'filterTable()' checked> 8</label><br>
+            <label><input type="checkbox" value="9" class="level-checkbox" onclick = 'filterTable()' checked> 9</label><br>
+        </div>
+        <div class="flex-child">School of Magic:<br>
+            <!---add filter for schools of magic-->
+            <label><input type="checkbox" value="Abjuration" class="school-checkbox" onclick = 'filterTable()' checked>Abjuration</label><br>
+            <label><input type="checkbox" value="Conjuration" class="school-checkbox" onclick = 'filterTable()' checked>Conjuration</label><br>
+            <label><input type="checkbox" value="Divination" class="school-checkbox" onclick = 'filterTable()' checked>Divination</label><br>
+            <label><input type="checkbox" value="Enchantment" class="school-checkbox" onclick = 'filterTable()' checked>Enchantmnet</label><br>
+            <label><input type="checkbox" value="Evocation" class="school-checkbox" onclick = 'filterTable()' checked>Evocation</label><br>
+            <label><input type="checkbox" value="Illusion" class="school-checkbox" onclick = 'filterTable()' checked>Illusion</label><br>
+            <label><input type="checkbox" value="Necromancy" class="school-checkbox" onclick = 'filterTable()' checked>Necromancy</label><br>
+            <label><input type="checkbox" value="Transmutation" class="school-checkbox" onclick = 'filterTable()' checked>Transmutation</label><br>
+        </div>
+        <div class="flex-child">HB School of Magic:<br>
+            <label><input type="checkbox" value="Biomancy" class="school-checkbox" onclick = 'filterTable()' checked>Biomancy</label><br>
+        </div>
+        <div class="flex-child">Spell List:<br>
+            <label><input type="checkbox" value="Artificer" class="list-checkbox" onclick = 'filterTable()' checked>Artificer</label><br>
+            <label><input type="checkbox" value="Bard" class="list-checkbox" onclick = 'filterTable()' checked>Bard</label><br>
+            <label><input type="checkbox" value="Cleric" class="list-checkbox" onclick = 'filterTable()' checked>Cleric</label><br>
+            <label><input type="checkbox" value = "Druid" class = "list-checkbox" onclick = 'filterTable()' checked>Druid</label><br>
+            <label><input type="checkbox" value="Ranger" class="list-checkbox" onclick = 'filterTable()' checked>Ranger</label><br>
+            <label><input type="checkbox" value="Paladin" class="list-checkbox" onclick = 'filterTable()' checked>Paladin</label><br>
+            <label><input type="checkbox" value="Sorcerer" class="list-checkbox" onclick = 'filterTable()' checked>Sorcerer</label><br>
+            <label><input type="checkbox" value="Warlock" class="list-checkbox" onclick = 'filterTable()' checked>Warlock</label><br>
+            <label><input type="checkbox" value="Wizard" class="list-checkbox" onclick = 'filterTable()' checked>Wizard</label><br>
+        </div>
+        <div class="flex-child">HB Spell List:<br>
+            <label><input type="checkbox" value="Tamer" class="list-checkbox" onclick = 'filterTable()' checked>Tamer</label><br>
+        </div>
+        <div class="flex-child">Override Filters:<br>
+            <!---add other filters, like ritual, consumed materials-->
+            <label><input type="checkbox" id="ritual-checkbox" onclick = 'filterTable()'>Ritual</label><br>
+            <label><input type="checkbox" id="concentration-checkbox" onclick = 'filterTable()'>Concentration</label><br>
+        </div>
+        </div>
+    </div>
+
+    <input class="searchBars" type="text" id="searchBar" placeholder="Search by Spell Name..." onkeyup="searchTable()">
+    <br>
+    <button id ='btn' onclick="printCheckedItems()">Make Spellbook</button>
+    
+    <table id="spellsTable">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th data-column="name">Name</th>
+                <th data-column="level" id="levelcol">Level</th>
+                <th data-column="school" id="schoolcol">School</th>
+                <th data-column="casting_time" id="castingcol">Casting Time</th>
+                <th data-column="range" id="rangecol">Range</th>
+                <th data-column="components">Components</th>
+                <th data-column="duration" id="durationcol">Duration</th>
+                <th data-column="description">Description</th>
+                <th data-column="class">Class List</th>
+                <th data-column="source">Source Book</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+
+    </table>
+
+
+    <script src ="spells.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+{
+    "spells": [
+      {
+        "name": "string",
+        "level": "integer",
+        "school": "string",
+        "casting_time": "string",
+        "ritual": "boolean",
+        "range": "string",
+        "components": {
+          "verbal": "boolean",
+          "somatic": "boolean",
+          "material": "string",
+          "consumed": "boolean"
+        },
+        "duration": "string",
+        "concentration": "boolean",
+        "description": "string",
+        "higher_levels": "string",
+        "damage": {
+          "type": "string (healing is a 'type' of damage)",
+          "amount": "string"
+        },
+        "saving_throw": {
+          "type": "string",
+          "effect": "string"
+        },
+        "source": "string",
+        "page_number": "integer",
+        "spell_list": []
+      },
+
+      {
+        "name": "string",
+        "level": "integer",
+        "school": "string",
+        "casting_time": "string",
+        "range": "string",
+        "components": {
+          "verbal": "boolean",
+          "somatic": "boolean",
+          "material": "string",
+          "consumed": "boolean"
+        },
+        "duration": "string",
+        "description": "string",
+        "higher_levels": null,
+        "damage": null,
+        "saving_throw": null,
+        "source": "Player's Handbook",
+        "page_number": "integer"
+      },
+
+      {
+        "name": " ",
+        "level": 1,
+        "school": " ",
+        "secondarySchool": "",
+        "casting_time": " ",
+        "ritual": false,
+        "range": " ",
+        "components": {
+          "verbal": true,
+          "somatic": true,
+          "material": " ",
+          "consumed": false
+        },
+        "duration": " ",
+        "concentration": false,
+        "description": "<p></p>",
+        "higher_levels": " ",
+        "damage": {
+          "type": " ",
+          "amount": " "
+        },
+        "saving_throw": {
+          "type": " ",
+          "effect": " "
+        },
+        "source": "Player's Handbook",
+        "page_number": 2,
+        "spell_list": []
+      },
+
+      {
+
+      }
+    ]
+  }
+  
+
+  
+      

@@ -1,0 +1,51 @@
+body{
+    color: #D7DADC;
+    background-color: black;
+    padding-left: 10%;
+}
+table {
+    width: auto;
+    border-collapse: collapse;
+    overflow: scroll;
+}
+th, td {
+    border-bottom: 1px solid #D7DADC;
+    text-align: left;
+}
+tr:hover {
+    background-color: gray;
+}
+
+#description{
+    overflow: auto;
+}
+#levelcol{
+    width: 50px;
+}
+#castingcol, #durationcol{
+    width: 100px;
+}
+#rangecol{
+    width: 80px;
+}
+
+div.warning{
+    background-color: #93032E;
+    border: 2px solid lightgray;
+    width: 60%;
+    height: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+div.flex-parent{
+    display: flex;
+    width: 60%;
+}
+div.flex-child{
+    flex: 1;
+    margin: 10px;
+    border: 2px solid lightgray;
+}
+input.searchBars{
+    border: 2px #5E6572;
+}

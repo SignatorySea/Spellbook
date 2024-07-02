@@ -1,0 +1,88 @@
+{
+    "spells":[
+        {
+            "name": "Antagonize",
+            "level": 3,
+            "school": "Enchantment",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "30 feet",
+            "components": {
+              "verbal": true,
+              "somatic": true,
+              "material": "a playing card depicting a rogue",
+              "consumed": false
+            },
+            "duration": "Instantaneous",
+            "concentration": false,
+            "description": "<p>You whisper magical words that antagonize one creature of your choice within range. The target must make a Wisdom saving throw. On a failed save, the target takes 4d4 psychic damage and must immediately use its reaction to make a melee attack against another creature of your choice that you can see. If the target can't make this attack (for example, because there is no one within its reach or because its reaction is unavailable), the target instead has disadvantage on the next attack roll it makes before the start of your next turn. On a successful save, the target takes half as much damage only.</p>",
+            "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.",
+            "damage": {
+              "type": "psychic",
+              "amount": "4d4"
+            },
+            "saving_throw": {
+              "type": "Wisdom",
+              "effect": "halves damage"
+            },
+            "source": "The Book of Many Things",
+            "page_number": 50,
+            "spell_list": ["Bard", "Sorcerer", "Warlock", "Wizard"]
+          },
+          {
+            "name": "Spirit of Death",
+            "level": 4,
+            "school": "Necromancy",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "60 feet",
+            "components": {
+              "verbal": true,
+              "somatic": true,
+              "material": "a gilded playing card worth at least 400 gp and depicting an avatar of death",
+              "consumed": false
+            },
+            "duration": "Concentration, up to 1 hour",
+            "concentration": true,
+            "description": "<p>You call forth a spirit that embodies death. The spirit manifests in an unoccupied space you can see within range and uses the reaper spirit stat block. The spirit disappears when it is reduced to 0 hit points or when the spell ends.</p><p>The spirit is an ally to you and your companions. In combat, the spirit shares your initiative count and takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue the spirit any commands, it takes the Dodge action and uses its movement to avoid danger.</p><tr><th>Reaper Spirit</th></tr><tr><td colspan=\"6\"><em>Medium Undead, Neutral</em></td></tr><tr><td colspan=\"6\"><strong>Armor Class:</strong> 11 + the level of the spell (natural armor)</td></tr><tr><td colspan=\"6\"><strong>Hit Points:</strong> 40 + 10 for each spell level above 4th</td></tr><tr><td colspan=\"6\"><strong>Speed:</strong> 30ft., fly 30ft. (hover)</td></tr><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr><td>16(+3)</td><td>16(+3)</td><td>16(+3)</td><td>16(+3)</td><td>16(+3)</td><td>16(+3)</td></tr><tr><td colspan=\"6\"><strong>Damage Immunities:</strong> necrotic, poison</td></tr><tr><td colspan=\"6\"><strong>Condition Immunities:</strong> charmed, exhaustion, frightened, paralyzed, poisoned</td></tr><tr><td colspan=\"6\"><strong>Senses:</strong> darkvision 60ft., passive Perception 13</td></tr><tr><td colspan=\"6\"><strong>Languages:</strong> understands the languages you speak</td></tr><tr><td colspan=\"6\"><strong>Proficiency Bonus:</strong> equals your bonus</td></tr><tr><td colspan=\"6\"><strong>Incoporeal Movement.</strong> The reaper can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes 1d10 force damage for every 5 feet traveled.</td></tr><tr><th colspan=\"6\">Actions</th></tr><tr><td colspan=\"6\"><strong>Multiattack.</strong> The spirit makes a number of Reaping Scythe attacks equal to half this spell's level (rounded down)</td></tr><tr><td colspan=\"6\"><strong>Reaping Scythe</strong> <em>Melee Weapon Attack:</em> your spell attack modifier to hit (with advantage), reach 5 ft., one target. <em>Hit:</em> 1d8 + 3 + the spell's level necrotic damage.</td></tr><tr><th colspan=\"6\">Bonus Actions</th></tr><tr><td colspan=\"6\"><strong>Haunt Creature</strong> The spirit targets a creature it can see within 10 feet of itself and begins haunting it. While the target is haunted, you and the spirit sense the direction and distance to the target if it is on the same plane of existence as you. Additionally, if the target starts its turn within 10 feet of the spirit, the target must succeed on a Wisdom saving throw against your spell save DC or have the frightened condition until the start of the target's next turn. The target remains haunted until it dies, the spirit disappears, or the spirit uses this action again.</td></tr></table>",
+            "higher_levels": "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the reaper spirit stat block.",
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": null,
+            "source": "The Book of Many Things",
+            "page_number": 50,
+            "spell_list": ["Sorcerer", "Warlock", "Wizard"]
+          },
+          {
+            "name": "Spray of Cards",
+            "level": 2,
+            "school": "Conjuration",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "Self (15-foot cone)",
+            "components": {
+              "verbal": true,
+              "somatic": true,
+              "material": "a deck of cards",
+              "consumed": false
+            },
+            "duration": "Instantaneous",
+            "concentration": false,
+            "description": "<p>You spray a 15-foot cone of spectral cards. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 2d10 force damage and has the blinded condition until the end of its next turn. On a successful save, a creature takes half as much damage only.</p>",
+            "higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.",
+            "damage": {
+              "type": "force",
+              "amount": "2d10"
+            },
+            "saving_throw": {
+              "type": "Dexterity",
+              "effect": "halves damage"
+            },
+            "source": "The Book of Many Things",
+            "page_number": 50,
+            "spell_list": ["Bard", "Sorcerer", "Warlock", "Wizard"]
+          }
+    ]
+}

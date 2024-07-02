@@ -1,0 +1,189 @@
+{
+    "spells": [
+        {
+            "name": "Distort Value",
+            "level": 1,
+            "school": "Illusion",
+            "casting_time": "1 minute",
+            "ritual": false,
+            "range": "Touch",
+            "components": {
+              "verbal": true,
+              "somatic": false
+            },
+            "duration": "8 hours",
+            "concentration": false,
+            "description": "<p>You cast this spell on an object no more than 1 foot on a side, doubling the object's perceived value by adding illusory flourishes or polish to it, or reducing its perceived value by half with the help of illusory scratches, dents, and other unsightly features. Anyone examining the object can ascertain its true value with a successful Intelligence (Investigation) check against your spell save DC.</p>",
+            "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the maximum size of the object increases by 1 foot for each slot level above 1st.",
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": null,
+            "source": "Acquisitions Incorporated",
+            "page_number": 75,
+            "spell_list": ["Bard", "Sorcerer", "Warlock", "Wizard"]
+          },
+          {
+            "name": "Fast Friends",
+            "level": 3,
+            "school": "Enchantment",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "30 feet",
+            "components": {
+              "verbal": true,
+              "somatic": false
+            },
+            "duration": "Concentration, up to 1 hour",
+            "concentration": true,
+            "description": "<p>When you cast this spell, choose one humanoid within range that can see and hear you, and that can understand you. The creature must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed in this way, it undertakes to perform any services or activities you ask of it in a friendly manner, to the best of its ability.</p><p>You can set the creature new tasks when a previous task is completed, or if you decide to end its current task. If the service or activity might cause harm to the creature, or if it conflicts with the creature's normal activities and desires, the creature can make another Wisdom saving throw to try to end the effect. This save is made with advantage if you or your companions are fighting the creature. If the activity would result in certain death for the creature, the spell ends.</p><p>When the spell ends, the creature knows it was charmed by you.<?p>",
+            "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": {
+              "type": "Wisdom",
+              "effect": "no effect"
+            },
+            "source": "Acquisitions Incorporated",
+            "page_number": 75,
+            "spell_list": ["Bard", "Cleric", "Wizard"]
+          },
+          {
+            "name": "Gift of Gab",
+            "level": 2,
+            "school": "Enchantment",
+            "casting_time": "1 reaction, which you take when you speak to another creature",
+            "ritual": false,
+            "range": "Self",
+            "components": {
+              "verbal": true,
+              "somatic": true,
+              "material": "2 gold coins, which is consumed as tax for using the spell",
+              "consumed": true
+            },
+            "duration": "Instantaneous",
+            "concentration": false,
+            "description": "<p>When you cast this spell, you skillfully reshape the memories of listeners in your immediate area, so that each creature of your choice within 5 feet of you forgets everything you said within the last 6 seconds. Those creatures then remember that you actually said the words you speak as the verbal component of the spell.</p>",
+            "higher_levels": null,
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": null,
+            "source": "Acquisitions Incorporated",
+            "page_number": 76,
+            "spell_list": ["Bard", "Wizard"]
+          },
+          {
+            "name": "Incite Greed",
+            "level": 3,
+            "school": "Enchantment",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "30 feet",
+            "components": {
+              "verbal": true,
+              "somatic": true,
+              "material": "a gem worth at least 50 gp",
+              "consumed": false
+            },
+            "duration": "Concentration, up to 1 minute",
+            "concentration": true,
+            "description": "<p>When you cast this spell, you present the gem used as the material component and choose any number of creatures within range that can see you. Each target must succeed on a Wisdom saving throw or be charmed by you until the spell ends, or until you or your companions do anything harmful to it. While charmed in this way, a creature can do nothing but use its movement to approach you in a safe manner. While an affected creature is within 5 feel of you, it cannot move, but simply stares greedily at the gem you present.</p><p>At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.</p>",
+            "higher_levels": null,
+            "damage": {
+              "type": "utility",
+              "amount": null
+            },
+            "saving_throw": {
+              "type": "Wisdom",
+              "effect": "no effect"
+            },
+            "source": "Acquisitions Incorporated",
+            "page_number": 76,
+            "spell_list": ["Cleric", "Warlock", "Wizard"]
+          },
+          {
+            "name": "Jim's Glowing Coin",
+            "level": 2,
+            "school": "Enchantment",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "60 feet",
+            "components": {
+              "verbal": false,
+              "somatic": true,
+              "material": "a coin, 2 gold coins, which is comsumed as tax for using the spell",
+              "consumed": true
+            },
+            "duration": "1 minute",
+            "concentration": false,
+            "description": "<p>When you cast the spell, you hurl the coin that is the spell's material component to any spot within range. The coin lights up as if under the effect of a light spell. Each creature of your choice that you can see within 30 feet of the coin must succeed on a Wisdom saving throw or be distracted for the duration. While distracted, a creature has disadvantage on Wisdom (Perception) checks and initiative rolls.</p>",
+            "higher_levels": null,
+            "damage": {
+              "type": "debuff",
+              "amount": null
+            },
+            "saving_throw": {
+              "type": "Wisdom",
+              "effect": "no effect"
+            },
+            "source": "Acquisitions Incorporated",
+            "page_number": 76,
+            "spell_list": ["Wizard"]
+          },
+          {
+            "name": "Jim's Magic Missile",
+            "level": 1,
+            "school": "Evocation",
+            "casting_time": "1 action",
+            "ritual": false,
+            "range": "120 feet",
+            "components": {
+              "verbal": true,
+              "somatic": true,
+              "material": "1 gold coin, which is consumed as tax for using the spell",
+              "consumed": true
+            },
+            "duration": "Instantaneous",
+            "concentration": false,
+            "description": "<p>You create three twisting, whistling, hypoallergenic, gluten-free darts of magical force. Each dart can target a creature of your choice that you can see within range. Make a ranged spell attack for each missile. On a hit, the missile does 2d4 force damage.</p><p>If the attack roll scores a critical, the missile does 5d4 force damage instead of the 4d4 force that you would normally get on a critical. If any of the attack roll is a natural one, all missiles turn around and hit the caster for 1 force damage per missile.</p>",
+            "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st. This also increases the tax by 1 gp per spell slot over 1st.",
+            "damage": {
+              "type": "force",
+              "amount": "2d4"
+            },
+            "saving_throw": null,
+            "source": "Acquisitions Incorporated",
+            "page_number": 76,
+            "spell_list": ["Wizard"]
+          },
+          {
+            "name": "Motivational Speech",
+            "level": 3,
+            "school": "Enchantment",
+            "casting_time": "1 minute",
+            "ritual": false,
+            "range": "60 feet",
+            "components": {
+              "verbal": true,
+              "somatic": false
+            },
+            "duration": "1 hour",
+            "concentration": false,
+            "description": "<p>Choose up to five creatures within range that can hear you. For the duration, each affected creature gains 5 temporary hit points and has advantage on Wisdom saving throws. If an affected creature is hit by an attack, it has advantage on the next attack roll it makes. Once an affected creature loses the temporary hit points granted by this spell, the spell ends for that creature.</p>",
+            "higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the temporary hit points increase by 5 for each slot level above 3rd.",
+            "damage": {
+              "type": "healing",
+              "amount": "5"
+            },
+            "saving_throw": null,
+            "source": "Acquisitions Incorporated",
+            "page_number": 77,
+            "spell_list": ["Bard", "Cleric"]
+          }
+    ]
+}
